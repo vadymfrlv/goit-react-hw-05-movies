@@ -7,7 +7,7 @@ class FetchMovies {
   #TREND = 'trending/movie/day';
 
   //   trending
-  trend = async page => {
+  trending = async page => {
     const respons = await axios.get(
       `${this.#BASE_URL}${this.#TREND}?api_key=${this.#KEY}&page=${page}`
     );
@@ -41,6 +41,6 @@ class FetchMovies {
   };
 }
 
-const api = new FetchMovies();
+const movieAPI = new FetchMovies();
 
-export default api;
+export default movieAPI;
