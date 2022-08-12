@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import stateMachine from '../../services/status';
 import movieAPI from '../../services/movieAPI';
+import stateMachine from '../../services/status';
 import Loader from '../Loader';
 import Notification from '../Notification';
 import styles from './Reviews.module.css';

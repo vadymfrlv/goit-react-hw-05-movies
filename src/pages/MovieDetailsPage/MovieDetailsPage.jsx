@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
-import Section from '../../components/Section';
-import stateMachine from '../../services/status';
 import movieAPI from '../../services/movieAPI';
+import stateMachine from '../../services/status';
+import Section from '../../components/Section';
+import MovieInfo from '../../components/MovieInfo';
 import Loader from '../../components/Loader';
 import Notification from '../../components/Notification';
-import MovieInfo from '../../components/MovieInfo';
 import styles from './MovieDetailsPage.module.css';
 
 const MovieDetails = () => {

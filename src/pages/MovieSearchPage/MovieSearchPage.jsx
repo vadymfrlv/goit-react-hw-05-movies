@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Section from '../../components/Section';
-import stateMachine from '../../services/status';
 import movieAPI from '../../services/movieAPI';
+import stateMachine from '../../services/status';
+import Section from '../../components/Section';
+import SearchForm from '../../components/SearchForm';
 import Loader from '../../components/Loader';
 import Notification from '../../components/Notification';
-import SearchForm from '../../components/SearchForm';
 import MoviesList from '../../components/MoviesList/MoviesList';
 
 const MovieSearch = () => {

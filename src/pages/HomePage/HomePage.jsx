@@ -1,7 +1,7 @@
-import Section from '../../components/Section';
 import { useState, useEffect } from 'react';
-import stateMachine from '../../services/status';
+import Section from '../../components/Section';
 import movieAPI from '../../services/movieAPI';
+import stateMachine from '../../services/status';
 import MoviesList from '../../components/MoviesList/MoviesList';
 import Loader from '../../components/Loader';
 import Notification from '../../components/Notification';
