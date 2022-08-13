@@ -4,24 +4,23 @@
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
-  color: #f23809;
-}
 
-.list {
-  background-color: #fff;
+  color: rgba(255, 255, 255, 0.676);
 }
 
 .item {
-  border-bottom: 2px solid lightcoral;
-  margin-bottom: 30px;
+  border-bottom: 2px solid #3c3c3c;
+  margin-bottom: 23px;
 }
 
 .author {
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .content {
+  color: #3c3c3c;
   margin-bottom: 10px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.3;
 }

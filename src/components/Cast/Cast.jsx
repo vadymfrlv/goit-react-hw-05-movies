@@ -55,8 +55,12 @@ const Cast = () => {
                 />
               )}
               <div className={styles.info}>
-                <p className={styles.descr}>Name: {elem.name}</p>
-                <p className={styles.descr}>Character: {elem.character}</p>
+                <p className={styles.descr}>
+                  <b>Name:</b> {elem.name}
+                </p>
+                <p>
+                  <b>Character:</b> {elem.character}
+                </p>
               </div>
             </li>
           ))}

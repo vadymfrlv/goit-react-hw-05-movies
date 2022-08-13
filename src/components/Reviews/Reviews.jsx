@@ -38,7 +38,7 @@ const Reviews = () => {
     }
     if (data.length !== 0) {
       return (
-        <ul className={styles.list}>
+        <ul>
           {data.map((elem, idx) => (
             <li className={styles.item} key={idx}>
               <p className={styles.author}>Author: {elem.author}</p>
