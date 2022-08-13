@@ -7,11 +7,11 @@ const SharedLayout = () => {
   return (
     <>
       <header className={styles.header}>
-        <nav className={styles.nav}>
-          <NavLink to="/" className="linkHome">
+        <nav>
+          <NavLink to="/" className={styles.homePage}>
             Home
           </NavLink>
-          <NavLink to="/movies" className="linkMovies">
+          <NavLink to="/movies" className={styles.moviesPage}>
             Movies
           </NavLink>
         </nav>

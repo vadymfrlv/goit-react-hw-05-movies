@@ -26,6 +26,7 @@ const SearchForm = ({ setSearch, setData, setStatus }) => {
         const response = await movieAPI.search(query, 1);
         setData(response.results);
         setStatus(stateMachine.RESOLVED);
+        setQuery('');
       } catch (error) {
         setStatus(stateMachine.REJECTED);
       }

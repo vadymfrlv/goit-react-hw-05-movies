@@ -1,0 +1,32 @@
+.listContainer {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.item {
+  display: block;
+  margin: 15px;
+  width: calc(100% / 5 - 40px);
+}
+
+.img {
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+}
+
+.item:hover,
+.item:focus {
+  box-shadow: 0px 0px 15px 6px rgb(246, 255, 0);
+}

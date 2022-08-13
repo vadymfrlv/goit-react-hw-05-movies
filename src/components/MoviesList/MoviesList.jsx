@@ -7,15 +7,33 @@ const MoviesList = ({ data, isHomePage }) => {
   const location = useLocation();
 
   return (
-    <ul className={styles.list}>
-      {data.map(elem => (
-        <li key={elem.id} className={styles.item}>
-          <Link to={`${url}${elem.id}`} state={{ from: location }} className={styles.link}>
-            {elem.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div className={styles.listContainer}>
+      <ul className={styles.list}>
+        {data.map(elem => (
+          <li className={styles.item} key={elem.id}>
+            <Link to={`${url}${elem.id}`} state={{ from: location }}>
+              {elem['poster_path'] ? (
+                <img
+                  className={styles.img}
+                  src={`https://image.tmdb.org/t/p/w500/${elem['poster_path']}`}
+                  alt={elem.name}
+                  width="150"
+                  height="200"
+                />
+              ) : (
+                <img
+                  className={styles.img}
+                  src="https://raw.githubusercontent.com/vadymfrlv/storage/b4e0abb7f45980d92f3ee2da26a5960181a17f8f/filmoteka/posterholder.jpg"
+                  alt=""
+                  width="150"
+                  height="200"
+                />
+              )}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

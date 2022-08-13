@@ -1,0 +1,30 @@
+.inform {
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f23809;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.img {
+  border-radius: 4px;
+}

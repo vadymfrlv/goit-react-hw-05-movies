@@ -34,7 +34,7 @@ const Reviews = () => {
 
   if (status === stateMachine.RESOLVED) {
     if (data.length === 0) {
-      return <p className={styles.inform}>There are no reviews for this movie yet.</p>;
+      return <p className={styles.inform}>There are no reviews for this movie yet</p>;
     }
     if (data.length !== 0) {
       return (

@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  margin-bottom: 20px;
+
+  background-color: rgba(0, 21, 255, 0.668);
+  border-bottom: 4px solid #e7fc00;
+}
+
+.homePage {
+  margin-right: 60px;
+}
+
+.homePage,
+.moviesPage {
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #e7fc00;
+}
+
+.homePage:hover,
+.homePage:focus,
+.moviesPage:hover,
+.moviesPage:focus {
+  color: rgb(167, 170, 173);
+}

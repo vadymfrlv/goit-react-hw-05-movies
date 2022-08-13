@@ -1,0 +1,11 @@
+.title {
+  margin-bottom: 23px;
+
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.676);
+}

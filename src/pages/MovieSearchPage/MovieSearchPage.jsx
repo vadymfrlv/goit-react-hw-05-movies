@@ -7,6 +7,7 @@ import SearchForm from '../../components/SearchForm';
 import Loader from '../../components/Loader';
 import Notification from '../../components/Notification';
 import MoviesList from '../../components/MoviesList/MoviesList';
+import styles from './MovieSearchPage.module.css';
 
 const MovieSearch = () => {
   const [search, setSearch] = useSearchParams();
@@ -42,6 +43,10 @@ const MovieSearch = () => {
       <SearchForm setSearch={setSearch} setData={setData} setStatus={setStatus} />
 
       {status === stateMachine.PENDING && <Loader />}
+
+      {status === stateMachine.RESOLVED && data.length === 0 && (
+        <p className={styles.title}>Nothing was found for "{queryURL}"</p>
+      )}
 
       {status === stateMachine.RESOLVED && data.length > 0 && queryURL !== '' && (
         <MoviesList data={data} isHomePage={false} />

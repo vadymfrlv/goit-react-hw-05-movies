@@ -1,0 +1,46 @@
+.infoSection {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.backBtn {
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background-color: #f23809;
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:first-child {
+  margin-right: 20px;
+}
+
+.additInfo {
+  padding: 10px 20px;
+  background-color: white;
+  color: lightcoral;
+  border: 2px solid lightcoral;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.additInfo:hover,
+.additInfo:focus {
+  background-color: lightcoral;
+  color: white;
+  border: 2px solid transparent;
+}
