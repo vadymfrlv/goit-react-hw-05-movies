@@ -42,7 +42,11 @@ const MovieSearch = () => {
     <Section>
       <SearchForm setSearch={setSearch} setData={setData} setStatus={setStatus} />
 
-      {status === stateMachine.PENDING && <Loader />}
+      {status === stateMachine.PENDING && (
+        <div className={styles.loader}>
+          <Loader />
+        </div>
+      )}
 
       {status === stateMachine.RESOLVED && data.length === 0 && (
         <p className={styles.title}>Nothing was found for "{queryURL}"</p>

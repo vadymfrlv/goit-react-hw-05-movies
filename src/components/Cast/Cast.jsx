@@ -46,21 +46,17 @@ const Cast = () => {
                   className={styles.img}
                   src={`https://image.tmdb.org/t/p/w500${elem['profile_path']}`}
                   alt={elem.name}
-                  width="150"
-                  height="200"
                 />
               ) : (
                 <img
                   className={styles.img}
                   src="https://raw.githubusercontent.com/vadymfrlv/storage/b4e0abb7f45980d92f3ee2da26a5960181a17f8f/filmoteka/posterholder.jpg"
                   alt=""
-                  width="150"
-                  height="200"
                 />
               )}
               <div className={styles.info}>
-                <p>Name: {elem.name}</p>
-                <p>Character: {elem.character}</p>
+                <p className={styles.descr}>Name: {elem.name}</p>
+                <p className={styles.descr}>Character: {elem.character}</p>
               </div>
             </li>
           ))}

@@ -9,22 +9,30 @@
 
 .list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
+  margin: -15px;
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
-
-.info {
-  margin-top: 10px;
-  font-size: 15px;
+  display: block;
+  margin: 15px;
+  width: calc(100% / 5 - 40px);
 }
 
 .img {
+  width: 200px;
   border-radius: 4px;
+}
+
+.info {
+  margin-bottom: 5px;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.descr {
+  margin-bottom: 23px;
+  font-weight: 500;
 }

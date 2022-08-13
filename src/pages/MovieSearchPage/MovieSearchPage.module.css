@@ -9,3 +9,9 @@
 
   color: rgba(255, 255, 255, 0.676);
 }
+
+.loader {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+}
